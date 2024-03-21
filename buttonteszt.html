@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Availability</title>
+</head>
+<body>
+
+<div id="sizes">
+    <button class="size-btn" onclick="selectSize(5)">5L</button>
+    <button class="size-btn" onclick="selectSize(10)">10L</button>
+    <button class="size-btn" onclick="selectSize(15)">15L</button>
+    <button class="size-btn" onclick="selectSize(20)">20L</button>
+</div>
+<div id="colors">
+    <button class="color-btn" onclick="selectColor('Fehér')">Fehér</button>
+    <button class="color-btn" onclick="selectColor('Zöld')">Zöld</button>
+    <button class="color-btn" onclick="selectColor('Kék')">Kék</button>
+    <button class="color-btn" onclick="selectColor('Szürke')">Szürke</button>
+    <button class="color-btn" onclick="selectColor('Fekete')">Fekete</button>
+    <button class="color-btn" onclick="selectColor('Piros')">Piros</button>
+    <button class="color-btn" onclick="selectColor('Sárga')">Sárga</button>
+</div>
+<div id="status"></div>
+<div id="price">Price: N/A</div>
+
+<script>
+    let selectedSize = null;
+    let selectedColor = null;
+
+    function selectSize(size) {
+        selectedSize = size;
+        updateStatus();
+    }
+
+    function selectColor(color) {
+        selectedColor = color;
+        updateStatus();
+    }
+
+    function updateStatus() {
+        const statusDiv = document.getElementById('status');
+        const priceDiv = document.getElementById('price');
+
+        if (selectedSize !== null && selectedColor !== null) {
+            const available = checkAvailability(selectedColor, selectedSize);
+            const price = getPrice(selectedColor, selectedSize);
+            
+            priceDiv.textContent = 'Price: ' + price + ' USD';
+            
+            if (available) {
+                statusDiv.textContent = selectedColor + ' is available in ' + selectedSize + ' Litres';
+                statusDiv.style.color = 'green';
+            } else {
+                statusDiv.textContent = selectedColor + ' is out of stock in ' + selectedSize + ' Litres';
+                statusDiv.style.color = 'red';
+            }
+        } else {
+            statusDiv.textContent = '';
+            priceDiv.textContent = 'Price: N/A';
+        }
+    }
+
+    function checkAvailability(color, size) {
+        // Implement your logic to check if the color is available in the desired size
+        // For example, you can have an object mapping colors to available sizes
+        const availability = {
+            'Fehér': [5, 10, 15, 20],
+            'Zöld': [10],
+            'Kék': [15, 20],
+            'Szürke': [5, 10, 15],
+            'Fekete': [20],
+            'Piros': [10, 15],
+            'Sárga': [5, 10]
+        };
+        return availability[color] && availability[color].includes(size);
+    }
+
+    function getPrice(color, size) {
+    const prices = {
+        'Fehér': {5: 15, 10: 25, 15: 35, 20: 45},
+        'Zöld': {10: 40},
+        'Kék': {15: 50, 20: 60},
+        'Szürke': {5: 20, 10: 30, 15: 40},
+        'Fekete': {20: 70},
+        'Piros': {10: 20, 15: 32},
+        'Sárga': {5: 18, 10: 22}
+    };
+
+    if (prices[color] && prices[color][size]) {
+        return prices[color][size] + ' USD';
+    } else {
+        return 'Out of stock';
+    }
+}
+
+</script>
+
+</body>
+</html>
+

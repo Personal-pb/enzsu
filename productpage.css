@@ -1,0 +1,164 @@
+body {
+    color: white;
+    font-family: 'ROBOTO';
+   
+}
+.kiszerelesek {
+    border: 2px solid white;
+    padding: 0.9rem;
+    cursor: pointer;
+    color: white;
+}
+#price {
+    margin-top: 20px;
+    /* margin-left: 0.5rem; */
+    color: white;
+}
+.price {
+    color: white;
+    margin-top: 2rem;
+}
+.price {
+    font-size: 20px;
+}
+#price-text {
+    font-size: 25px;
+}
+h2 {
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+}
+#img1 {
+    margin-left: 2rem;
+}
+#img1:hover, #img2:hover, #img3:hover {
+    border: 2px solid #0ef6cc;
+}
+#first-color {
+    border: 3px solid white;
+    border-radius: 5rem;
+    padding: 10px;
+    background-color: red;
+}
+.select-btn {
+    margin-top: 40px;
+    width: 60px;
+    height: 30px;
+    border: 2px solid white;
+    margin-bottom: 2rem;
+    color: black;
+    
+}
+@media screen and (max-width: 999px) {
+    .buttons {
+        display: grid;
+        grid-template-columns: 70px 70px 70px 70px;
+        margin-top: 4px;
+    }
+    .select-btn {
+        margin-top: 2px;
+        width: 60px;
+        height: 30px;
+        border: 2px solid white;
+        margin-bottom: 0.4rem;
+        color: black;
+    }
+    #sizes {
+        margin-bottom: 4rem;
+    }
+}
+.select-btn:hover {
+    border: 2px solid #0ef6cc;
+}
+.white {
+    background-color: white;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.grey {
+    background-color: grey;
+}
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+
+@media screen and (max-width: 900px) {
+    .product-image {
+        background-color: white;
+    margin-top: 25px;
+    height: 40%;
+    text-align: center;
+    
+    }
+    .product-title { 
+        margin-top: 5px;
+    }
+    .kep {
+        border-radius: 2rem;
+        scale: 70%;
+    }
+}
+#kiszerelesek-text {
+    margin-right: 0.7rem;
+}
+
+.content {
+    padding: 1rem;
+}
+.kep {
+    border-radius: 2rem;
+}
+.navbar-toggler {
+    background-color: #0ef6cc;
+}
+.order-status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0ef6cc;
+}
+#kiszerelesek-text {
+    font-size: 20px;
+}
+.size-btn:hover {
+    border: 2px solid #0ef6cc;
+}
+.size-btn:active {
+    border: 3px solid #0ef6cc;
+}
+#order-btn {
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    opacity: 1;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    color: white;
+    
+}
+#order-btn:hover {
+    border: 2px solid #0ef6cc;
+}
+
+.white-text {
+    color: white;
+
+}
+.black-text {
+    color: black;
+}
+.table-row {
+    max-width: 500px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

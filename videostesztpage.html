@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Player</title>
+<style>
+  #video-container {
+    display: none;
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+  }
+  .button-container {
+    text-align: center;
+  }
+  .button-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="video-container">
+  <iframe id="youtube-player" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="button-container">
+  <button onclick="playVideo()">Video 1</button>
+  <button onclick="playVideo()">Video 2</button>
+  <button onclick="playVideo()">Video 3</button>
+  <button onclick="playVideo()">Video 4</button>
+  <button onclick="playVideo()">Video 5</button>
+  <button onclick="playVideo()">Video 6</button>
+</div>
+
+<script>
+  function playVideo() {
+    var player = document.getElementById('youtube-player');
+    player.src = 'https://www.youtube.com/embed/iH5_77cTS0k';
+    document.getElementById('video-container').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
+

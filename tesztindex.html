@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Enzsufestek.hu - Kezdőlap</title>
+    <style>
+        /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main box styles */
+.main-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo title styles */
+#logo-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Logo alt styles */
+#logo-alt {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+}
+
+/* Navbar link styles */
+.nav-link {
+  color: #fff !important;
+}
+
+/* Active navbar link styles */
+.nav-link.active {
+  font-weight: bold;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: #333;
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+  color: #fff !important;
+}
+
+/* Card title styles */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Card text styles */
+.card-text {
+  font-size: 14px;
+}
+
+/* Footer section styles */
+.footer-section {
+  padding-top: 20px;
+}
+
+/* Footer info styles */
+.footer-infos {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Footer options styles */
+.footer-options {
+  list-style-type: none;
+}
+
+/* Footer hover styles */
+.footer-hover:hover {
+  color: #fff !important;
+}
+
+/* Social icon styles */
+.social {
+  width: 24px;
+  height: 24px;
+}
+
+/* Back to top button styles */
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="mode-switch">
+    <input type="checkbox" id="darkModeSwitch">
+    <label for="darkModeSwitch">Dark Mode</label>
+</div>
+
+<div class="container-fluid main-box">
+    <a href="index.html"></a><span id="logo-title">ENZSU FESTÉK KFT.</span> <br> <span id="logo-alt">MINDIG TUDUNK JOBBAT MUTATNI</span>
+</div>
+
+<!-- <img src="tesztimg3.png" alt="" class="logo"> -->
+<nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""><img class="navbar-kep" src="https://cdn1.iconfinder.com/data/icons/iconoir-vol-3/24/menu-1024.png" alt=""></span>   
+      </button>     
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fo-btn " aria-current="page" href="index.html">Kezdőlap</a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link  alt-btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Termékek
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item  alt2-btn " href="termekek.html">Összes termék</a></li>
+                <li><hr class="dropdown-divider"></li>
+                
+                <li><a class="dropdown-item  alt2-btn " href="#">Beltéri falfestékek</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item alt2-btn" href="#">Kültéri falfestékek</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item alt2-btn" href="#">Gipszkartonok</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item alt2-btn"  href="#">Glettek</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Lazúrok</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hőszigetelők</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Vakolatok</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Csemperag</a></li>
+              
+              </ul>
+            </li>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active alt-btn " aria-current="page" href="kapcsolat.html">Kapcsolat</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- <div class="img-slideshow">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://cdn.mos.cms.futurecdn.net/CUYYQ5kfdrYtzCnrJtF9Qb.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://cdn.mos.cms.futurecdn.net/CUYYQ5kfdrYtzCnrJtF9Qb.jpg" class="d-block w-100" alt="...">  
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.mos.cms.futurecdn.net/CUYYQ5kfdrYtzCnrJtF9Qb.jpg" class="d-block w-100" alt="...">           
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden ">Előző</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden ">Következő</span>
+      </button>
+    </div>
+  </div> -->
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <p class=" firstp hidden szoveg">ENZSU FESTÉK KFT. SZEMÉLYRE SZABOTT MEGOLDÁSOK!</p>
+              <p class=" secondp hidden szoveg2"> 
+                BÍZHAT SZAKEMBEREINKBEN, AKIK KÉSZEN ÁLLNAK BÁRMILYEN KÉRDÉSRE, LEGYEN AZ SZÍNVÁLASZTÁS VAGY ÉPPEN A TERMÉKEK HELHASZNÁLÁSÁRA VONATKOZÓ TANÁCSADÁSBAN.</p>
+              <p class="hidden szoveg3">Ha már unja a hosszú polcok közötti keresgélést és a néha tapasztalható, nem szakszerű tanácsokat, vagy egyszerűen csak szeretné kellemesebb környezetben beszerezni otthona szépítéséhez szükséges termékeket, bátran írja le kérdéseit, és keressen meg minket emailben vagy telefonon!</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+              <a href="kapcsolat.html"><button class="gomb hidden hidden-YX szoveg4">Kapcsolat</button></a>
+          </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 zoom">
+          <div class="card hidden" >
+            <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Termékek</h5>
+              <p class="card-text">Megszeretné tekinteni a legjobb ajánlatainkat? Kattintson a gombra. </p>
+              <a href="termekek.html" class="btn btn-text">Érdekel</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 zoom">
+          <div class="card hidden kartya1" >
+            <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Szállítási információk</h5>
+              <p class="card-text">Többet szeretne megtudni a szállítási információkról? Kattintson a gombra.</p>
+              <a href="szallitasi-informaciok.html" class="btn btn-text">Érdekel</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 zoom">
+          <div class="card hidden kartya2" >
+            <img src="https://www.polifarbe.hu/admin/STORAGE/media/file_20220405105704_file8632_7814.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rendelés/ajánlatkérés</h5>
+              <p class="card-text">Többet szeretne megtudni a rendelési információkról? Kattintson a gombra.</p>
+              <a href="order.html" class="btn btn-text">Érdekel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row footer-section">
+          <div class="col-lg-3 col-md-12">
+            <h5 class="footer-infos hidden ">Szolgáltatások</h5>
+            <ul class="nav flex-column footer-options hidden-Y hidden text1">
+              <li class="nav-item mb-2"><a href="order.html" class="nav-link p-0 footer-hover ">Rendelés/ajánlatkérés</a></li>
+              <li class="nav-item mb-2"><a href="belterifalfestek.html" class="nav-link p-0 footer-hover">Beltéri Falfesték</a></li>
+              <li class="nav-item mb-2"><a href="kulterifalfestek.html" class="nav-link p-0 footer-hover">Kültéri Falfesték</a></li>
+              <li class="nav-item mb-2"><a href="glettek.html" class="nav-link p-0 footer-hover">Glettek</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-hover">Poli-Farbe Festék</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h5 class="footer-infos hidden cim1">Elérhetőségeink</h5>
+            <ul class="nav flex-column footer-options hidden hidden-YX text2 ">
+              
+              <li class="nav-item mb-2"><span class="text-grey">Cím: Király utca 19 </span><br><span class="text-grey">Telefon:</span> <a href="tel:36308794678"><span class="footer-hover">+36 3 934 321</span></a> <br> <span class="text-grey">E-mail:</span> <a href="mailto:festektarfou@gmail.com"><span class="footer-hover">bemutato@gmail.com</span></a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12 offset-lg-1">
+              <h5 class="footer-infos hidden-Y hidden  cim2" >Íratkozz fel a hírlevelünkre</h5>
+              <p class="text-sub hidden-Y hidden cim2">Minél hamarabb értesülj az újdonságokról</p>
+              <form class="row g-3" action="https://formsubmit.co/EMAIL CIMET IDE KELL IRNI!!!" method="POST">
+       
+                <input type="text" name="_honey" style="display: none;">
+      
+                <input type="hidden" name="_captcha" value="false">
+      
+                <input type="hidden" name="_next" value="https://festektar.github.io/Kezdolap/success.html" >
+
+                <div class="d-flex w-100 gap-4">
+                  <input type="email" class="form-control box hidden-Y hidden text3 " name="email" id="emailInfo" placeholder="Email cím" required>
+                  <button type="submit" class="btn btn-text hidden-Y hidden text3">Elküldés</button>
+                </div>
+              </form>
+            </div>
+        </div>
+        <!-- <div class="row payment-row ">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+            <img src="https://cdn0.iconfinder.com/data/icons/shift-ecommerce/32/Master_Card-1024.png" alt="" class="payment-icons "> <span class="mastercard">Mastercard</span>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+            <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-1024.png" alt="" class="payment-icons ">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+            <img src="https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_Paypal-39-1024.png" alt="" class="payment-icons ">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+            <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/640/apple-pay-1024.png" alt="" class="payment-icons ">
+          </div>
+        </div> -->
+  
+        <div class="d-flex justify-content-between  py-4 copyright-tag">
+          <p id="copy-tag">&copy; 2024 ENZSU FESTÉK KFT. Minden jog fenttartva. <br> Üzemeltető: Enzsu Festék KFT.</p>
+         
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3 "><a class="link-dark " href="#"><img class="social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-512.png" alt=""></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><img class="social " width="24" height="24" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-1024.png" alt=""></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><img class="right-social-icon social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-512.png" alt=""></a></li>
+          </ul>
+        </div>
+        <button class="d-none d-sm-block" onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop d-none d-sm-block"></button>    
+
+<script>
+    // JavaScript for toggling dark/light mode
+    const darkModeSwitch = document.getElementById('darkModeSwitch');
+
+    darkModeSwitch.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</body>
+</html>

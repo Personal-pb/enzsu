@@ -1,0 +1,25 @@
+#price-tag {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+#price {
+    color: #0ef6cc;
+}
+#credit {
+    margin-top: 1.5rem;
+    ;
+}
+a, a:hover {
+    color: #0ef6cc;
+}
+h4 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.platkep {
+    border-radius: 5rem;
+    scale: 80%
+}
+.table {
+    color: white;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="termekek.css">
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="shortcut icon" href="185053_paint_brush_icon.png" type="image/x-icon">
+    <script defer src="app.js"></script>
+    <script defer src="GoToTop.js"></script>
+    <title>Enzsufestek.hu - Poli-Farbe</title>
+</head>
+<body>
+    
+  <div class="container-fluid main-box">
+    <a href="index.html"><span id="logo-title">ENZSU FESTÉK KFT.</span> <br> <span id="logo-alt">MINDIG TUDUNK JOBBAT MUTATNI</span></a></div>
+    <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""><img class="navbar-kep" src="https://cdn1.iconfinder.com/data/icons/iconoir-vol-3/24/menu-1024.png" alt=""></span>   
+        </button>     
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active alt-btn " aria-current="page" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fo-btn " aria-current="page" href="termekek.html">Termékek</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active alt-btn " aria-current="page" href="kapcsolat.html">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+      
+      <div class="container content">
+        <div class="row">
+        <div class="col-lg-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="platprob.png" class="d-block w-100 platkep" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="plat2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="plat3.webp" class="d-block w-100 platkep" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+            
+        </div>
+        <div class="col-lg-7">
+            <h2>Poli-Farbe Platinum Festék</h2>
+            
+          
+          <div id="sizes" >
+            <span id="kiszerelesek-text">Kiszerelések:</span>
+            <span class="size-btn kiszerelesek" onclick="selectSize(5)">5L</span>
+            <span class="size-btn kiszerelesek" onclick="selectSize(10)">10L</span>
+            <span class="size-btn kiszerelesek" onclick="selectSize(15)">15L</span>
+            <span class="size-btn kiszerelesek" onclick="selectSize(20)">20L</span>
+        </div>
+        <div id="colors" class="buttons">
+            <button class="color-btn white select-btn"  onclick="selectColor('Fehér')"></button>
+            <button class="color-btn green select-btn" onclick="selectColor('Zöld')"></button>
+            <button class="color-btn blue select-btn" onclick="selectColor('Kék')"></button>
+            <button class="color-btn blue select-btn" onclick="selectColor('Szürke')"></button>
+            <button class="color-btn black select-btn" onclick="selectColor('Fekete')"></button>
+            <button class="color-btn red select-btn" onclick="selectColor('Piros')"></button>
+            <button class="color-btn yellow select-btn" onclick="selectColor('Sárga')"></button>
+        </div>
+        <div id="status" class="order-status"></div>
+        <div id="status"></div>
+        <div id="price">Ára: </div>
+             
+              <a href="order.html"><button id="order-btn">Rendelés</button></a>
+
+            <p>Termékleírás: </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque, hic pariatur ratione minima ad aliquid laboriosam architecto nemo eius saepe, veritatis adipisci, tempore vero sequi non officiis quis fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quibusdam nobis, eaque vitae beatae odit, quidem esse doloribus vel veritatis aut neque quo consectetur dolorem pariatur quia architecto culpa porro!
+            Asperiores laborum sed quidem ducimus eligendi dolorem quia, provident, accusamus expedita consequuntur consectetur fuga, voluptates veritatis in atque dicta. Nisi, aspernatur eveniet repellendus mollitia quia harum voluptatem aut reiciendis itaque.
+           </p>
+            </div>
+        </div>  
+      </div>
+            
+        
+    <div class="container">
+          <div class="d-flex justify-content-between  py-4 copyright-tag ">
+            <p>&copy; 2023 Festéktár KFT. Minden jog fenttartva.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3 "><a class="link-dark " href="#"><img class="social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-512.png" alt=""></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><img class="social " width="24" height="24" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-1024.png" alt=""></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><img class="right-social-icon social" width="24" height="24" src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-512.png" alt=""></a></li>
+            </ul>
+          </div></div>
+          <button class="d-none d-sm-block" onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop d-none d-sm-block"></button>   
+          
+          <script>
+            let selectedSize = null;
+            let selectedColor = null;
+        
+            function selectSize(size) {
+                selectedSize = size;
+                updateStatus();
+            }
+        
+            function selectColor(color) {
+                selectedColor = color;
+                updateStatus();
+            }
+        
+            function updateStatus() {
+                const statusDiv = document.getElementById('status');
+                const priceDiv = document.getElementById('price');
+        
+                if (selectedSize !== null && selectedColor !== null) {
+                    const available = checkAvailability(selectedColor, selectedSize);
+                    const price = getPrice(selectedColor, selectedSize);
+        
+                    if (available) {
+                        statusDiv.textContent = selectedSize + ' literes ' + selectedColor + ' színben: ' + ' Rendelhető ✅';
+                                statusDiv.style.color = '#0ef6cc';
+                    } else {
+                        statusDiv.textContent = selectedSize + ' literes ' + selectedColor + ' színben: ' + ' Nem elérthető ❌';
+                        statusDiv.style.color = 'red';
+                    }
+        
+                    priceDiv.textContent = 'Ára: ' + price;
+                    priceDiv.style.fontSize = '1.5rem'
+                } else {
+                    statusDiv.textContent = '';
+                    if (selectedSize !== null && selectedColor !== null) {
+                        priceDiv.textContent = 'Price: N/A';
+                    }
+                }
+            }
+        
+            function checkAvailability(color, size) {
+                const availability = {
+                    'Fehér': [5, 10, 15, 20],
+                    'Zöld': [10],
+                    'Kék': [15, 20],
+                    'Szürke': [5, 10, 15],
+                    'Fekete': [20],
+                    'Piros': [10, 15],
+                    'Sárga': [5, 10]
+                };
+                return availability[color] && availability[color].includes(size);
+            }
+        
+            function getPrice(color, size) {
+                const prices = {
+                    'Fehér': {5: 5800, 10: 8755, 15: 12550, 20: 15000},
+                    'Zöld': {5: 6545, 10: 8755, 15: 12550, 20: 15000},
+                    'Kék': {5: 5800, 10: 9500, 15: 12550, 20: 15000},
+                    'Szürke': {5: 5800, 10: 8755, 15: 12550, 20: 15000},
+                    'Fekete': {5: 5800, 10: 8755, 15: 15000, 20: 15000},
+                    'Piros': {5: 6700, 10: 8755, 15: 12550, 20: 15000},
+                    'Sárga': {5: 5893, 10: 8755, 15: 12550, 20: 15000}
+                };
+
+                if (prices[color] && prices[color][size]) {
+                    return prices[color][size] + ' FT';
+                } else {
+                    return '';
+                }
+}
+
+        </script>
+</body>
+</html>
