@@ -22,6 +22,12 @@ h5 {
         font-size: 15px;
         font-weight: bold;
     }
+    
+}
+@media screen and (min-width: 768px) {
+    .card-img-top {
+        height: 220px;
+    }
 }
 @media screen and (min-width: 1199px) and (max-width: 1399px) {
     .card-text {
@@ -29,3 +35,16 @@ h5 {
         font-weight: bold;
     }
 }
+@media screen and (min-width: 999px) and (max-width: 1399px) {
+    .card-img-top {
+        height: 140px;
+        padding: 0.5rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .card-img-top {
+        height: 220px;
+        padding: 0.5rem;
+    }
+}
+

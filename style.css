@@ -487,7 +487,7 @@ h5 {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 100%;
         font-size: 17px;
     }
 }
@@ -575,5 +575,24 @@ h5 {
 
 .footer-section {
     margin-bottom: 2rem;
+}
+
+#ATTENTION {
+    color: red;
+}
+.footer-logo-box {
+    max-width: 500px;
+;
+}
+#footer-logo-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#footer-logo-alt {
+    text-align: right;
+    color: #0ef6cc;
+    font-size: 0.8rem;
 }
 
